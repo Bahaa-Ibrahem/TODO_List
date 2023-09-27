@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO Task</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body dir="ltr">
+    <nav class="navbar">
+        <div class="navbar__primary">
+          <div class="navbar__primary__logo">
+            <img src="assets/images/QR_code.svg" alt="Logo" />
+          </div>
+        </div>
+
+        <div class="navbar__secondary">
+          <div class="navbar__secondary__title">
+            <h2>نظام ادارة المهام</h2>
+            <h4>Task Management System</h4>
+          </div>
+        </div>
+
+        <div class="navbar__white">
+          <div class="navbar__white__title">
+            <h2>ادارة الموظفين</h2>
+          </div>
+          <div class="navbar__white__logo">
+            <img src="assets/images/twitter.svg" alt="Twitter" />
+          </div>
+        </div>
+    </nav>
+
+    <div class="card">
+      <div class="card__time">
+        <div class="card__time__date">
+          <p>12</p>
+          <p class="card__time__date__month"><small> Jan </small>2016</p>
+        </div>
+        <div class="card__time__day">
+          <h3>Tuesday</h3>
+        </div>
+      </div>
+
+      <ul class="card__list">
+        <li class="card__list__item">
+          <input id="Buy" type="checkbox" checked />
+          <label for="Buy">Buy new sweatshirt</label>
+        </li>
+
+        <li class="card__list__item">
+          <input id="Beging" type="checkbox" checked />
+          <label for="Beging">Beging promotiona phase</label>
+        </li>
+
+        <li class="card__list__item">
+          <input id="Read" type="checkbox" />
+          <label for="Read">Read an article</label>
+        </li>
+
+        <li class="card__list__item">
+          <input id="Try" type="checkbox" />
+          <label for="Try">Try not to full sleep</label>
+        </li>
+
+        <li class="card__list__item">
+          <input id="Watch" type="checkbox" />
+          <label for="Watch">Watch 'sharlock'</label>
+        </li>
+
+        <li class="card__list__item">
+          <input id="Beging" type="checkbox" />
+          <label for="Beging">Beging QA for the product</label>
+        </li>
+
+        <li class="card__list__item">
+          <input id="Go" type="checkbox" />
+          <label for="Go">Go for a walk</label>
+        </li>
+      </ul>
+
+      <a href="javascript:void(0);" class="card__button">
+        <img src="assets/images/plus.svg" alt="Plus">
+      </a>
+    </div>
+    
+    <a onclick="changeDirction()" class="lang">
+      <img src="assets/images/translate.png" alt="Translate">
+    </a>
+
+    <script src="/javascript.js"></script>
+</body>
+</html>
