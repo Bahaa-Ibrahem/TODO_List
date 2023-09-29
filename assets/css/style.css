@@ -303,8 +303,8 @@ h1, h2, h3, h4, h5, h6, p {
 @media (max-width: 767px) {
   .lang {
     top: unset;
-    bottom: 30px;
-    right: 4%;
+    bottom: 0;
+    right: 3%;
   }
 }
 
@@ -358,7 +358,7 @@ body[dir=rtl] .lang {
 @media (max-width: 767px) {
   body[dir=rtl] .lang {
     right: unset;
-    left: 4% !important;
+    left: 3% !important;
   }
 }
 body[dir=rtl] .card__time__date__month {
