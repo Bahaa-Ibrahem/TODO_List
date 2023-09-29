@@ -32,6 +32,7 @@ body {
   box-sizing: border-box;
   color: #000000;
   background-color: #F0EFEA;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -85,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .navbar__secondary h2, .navbar__secondary h4 {
   color: #FFFFFF;
-  padding-right: 2rem;
+  padding-right: 2em;
 }
 .navbar__secondary::after {
   content: " ";
@@ -137,6 +138,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .navbar__primary__logo {
     left: 15px;
+    width: 80px;
   }
   .navbar__secondary {
     width: 100%;
@@ -144,6 +146,9 @@ h1, h2, h3, h4, h5, h6, p {
   .navbar__secondary::after {
     width: 0;
     height: 0;
+  }
+  .navbar__secondary h2, .navbar__secondary h4 {
+    padding-right: 1em;
   }
   .navbar__white {
     width: 100%;
@@ -274,13 +279,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @media (max-width: 767px) {
   .card {
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
 }
 
 .lang {
   position: absolute;
-  top: 17%;
+  top: 120px;
   right: 2.5%;
   width: 3rem;
   height: 3rem;
@@ -297,8 +302,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @media (max-width: 767px) {
   .lang {
-    top: 29%;
-    right: 3%;
+    top: unset;
+    bottom: 30px;
+    right: 4%;
   }
 }
 
@@ -331,6 +337,15 @@ body[dir=rtl] .navbar__white__logo {
     left: unset;
     right: 15px !important;
   }
+  body[dir=rtl] .navbar__secondary {
+    left: unset;
+    right: 0 !important;
+  }
+  body[dir=rtl] .navbar__secondary h2, body[dir=rtl] .navbar__secondary h4 {
+    padding-right: unset;
+    padding-left: 1em !important;
+    text-align: left;
+  }
   body[dir=rtl] .navbar__white {
     right: unset;
     left: 0 !important;
@@ -343,7 +358,7 @@ body[dir=rtl] .lang {
 @media (max-width: 767px) {
   body[dir=rtl] .lang {
     right: unset;
-    left: 3% !important;
+    left: 4% !important;
   }
 }
 body[dir=rtl] .card__time__date__month {

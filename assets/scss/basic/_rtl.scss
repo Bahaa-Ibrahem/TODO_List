@@ -41,6 +41,17 @@ body[dir= "rtl"] {
                     right: 15px !important; 
                 }
             }
+
+            &__secondary {
+                left: unset;
+                right: 0 !important;
+    
+                h2, h4 {
+                    padding-right: unset;
+                    padding-left: 1em !important;
+                    text-align: left;
+                }
+            }
         
             &__white {
                 right: unset;
@@ -55,7 +66,7 @@ body[dir= "rtl"] {
 
         @media (max-width: 767px) {
             right: unset;
-            left: 3% !important;
+            left: 4% !important;
         }
     }
 

@@ -1,6 +1,6 @@
 .lang {
     position: absolute;
-    top: 17%;
+    top: 120px;
     right: 2.5%;
     width: 3rem;
     height: 3rem;
@@ -8,16 +8,17 @@
     border-radius: 8px;
     cursor: pointer;
     text-decoration: none;
-
+  
     img {
         display: block;
         margin: auto;
         width: 20px;
         margin-top: 0.75rem;
     }
-
+  
     @media (max-width: 767px) {
-        top: 29%;
-        right: 3%;
+        top: unset;
+        bottom: 30px;
+        right: 4%;
     }
-}
+  }

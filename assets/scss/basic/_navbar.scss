@@ -49,7 +49,7 @@
 
         h2, h4 {
             color: $white-color;
-            padding-right: 2rem;
+            padding-right: 2em;
         }
 
         &::after {
@@ -111,6 +111,7 @@
 
             &__logo {
                 left: 15px; 
+                width: 80px;
             }
         }
 
@@ -121,6 +122,10 @@
                 width: 0;
                 height: 0;
             } 
+
+            h2, h4 {
+                padding-right: 1em;
+            }
         }
 
         &__white {
